@@ -9,16 +9,16 @@ in-cluster agent, and it starts read-only by default.
 
 ## Install
 
-The canonical, reviewable instructions live at
-[fortem.dev/install](https://fortem.dev/install). Release archives and
-`checksums.txt` are attached on the [Releases](../../releases) page.
+Release archives, installer scripts, and `checksums.txt` are attached on the
+[Releases](../../releases) page. The GitHub-hosted commands below work before
+the new fortem.dev website is promoted to production.
 
 ```sh
-curl -fsSL https://fortem.dev/install.sh | sh
+curl -fsSL https://github.com/cybrixcc/fortem-releases/releases/latest/download/install.sh | sh
 ```
 
 ```powershell
-irm https://fortem.dev/install.ps1 | iex
+irm https://github.com/cybrixcc/fortem-releases/releases/latest/download/install.ps1 | iex
 ```
 
 ```sh
@@ -30,5 +30,11 @@ SHA-256 checksum. A checksum proves archive integrity; it is not code signing
 or notarization. Current release security boundaries are documented at
 [fortem.dev/security](https://fortem.dev/security).
 
+The shorter `fortem.dev/install.sh` and `install.ps1` URLs become canonical
+when the Kubernetes website PR is promoted. Both copies are byte-for-byte the
+same scripts for this release.
+
 This repository contains distribution artifacts only, not the Fortem source.
-Use of the binaries is subject to the [Fortem terms](https://fortem.dev/terms).
+The Fortem Local Binary License and third-party notices are included in every
+archive. Use of the website and services is also subject to the
+[Fortem terms](https://fortem.dev/terms).
